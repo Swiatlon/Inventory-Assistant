@@ -1,11 +1,20 @@
 import { Grid } from '@mui/material';
 import { FeatureCard } from './FeatureCard';
 import InventoryIcon from '@mui/icons-material/Inventory';
+import Inventory2Icon from '@mui/icons-material/Inventory2';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import InsightsIcon from '@mui/icons-material/Insights';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 
 const featureCards = [
+  {
+    title: 'Products Catalog',
+    description: 'Browse and manage your product catalog. Add new items or update existing ones.',
+    icon: <Inventory2Icon />,
+    path: '/products',
+    color: '#1976D2',
+    gradient: 'linear-gradient(135deg, #1976D2 0%, #64B5F6 100%)',
+  },
   {
     title: 'Smart Inventory Management',
     description: 'Keep track of your items with automatic notifications for low stock and expiring products.',

@@ -6,6 +6,7 @@ import {
   ShoppingCart as ShoppingCartIcon,
   Inventory as InventoryIcon,
   Settings as SettingsIcon,
+  Inventory2 as Inventory2Icon,
 } from '@mui/icons-material';
 import { LayoutProps, MenuItem } from '../../types/layout';
 import { AppBar } from './AppBar';
@@ -14,10 +15,31 @@ import { MobileDrawer, DesktopDrawer } from './drawer';
 const DRAWER_WIDTH = 300;
 
 export const menuItems: MenuItem[] = [
-  { text: 'Home', icon: <HomeIcon />, path: '/' },
-  { text: 'Inventory', icon: <InventoryIcon />, path: '/inventory' },
-  { text: 'Shopping List', icon: <ShoppingCartIcon />, path: '/shopping-list' },
-  { text: 'Settings', icon: <SettingsIcon />, path: '/settings' },
+  {
+    text: 'Home',
+    path: '/',
+    icon: <HomeIcon />
+  },
+  {
+    text: 'Products',
+    path: '/products',
+    icon: <Inventory2Icon />
+  },
+  {
+    text: 'Inventory',
+    path: '/inventory',
+    icon: <InventoryIcon />
+  },
+  {
+    text: 'Shopping List',
+    path: '/shopping-list',
+    icon: <ShoppingCartIcon />
+  },
+  {
+    text: 'Settings',
+    path: '/settings',
+    icon: <SettingsIcon />
+  }
 ];
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
