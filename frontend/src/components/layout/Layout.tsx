@@ -72,7 +72,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           width: { sm: `calc(100% - ${DRAWER_WIDTH}px)` },
           mt: '64px',
           bgcolor: 'background.default',
-          minHeight: '100vh',
+          minHeight: 'calc(100vh - 64px)'
         }}
       >
         {children}

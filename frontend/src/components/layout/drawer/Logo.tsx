@@ -9,8 +9,8 @@ interface LogoProps {
 export const Logo: React.FC<LogoProps> = ({ size = 'medium' }) => {
   const sizes = {
     small: { icon: 24, text: 'subtitle1' },
-    medium: { icon: 28, text: 'h6' },
-    large: { icon: 32, text: 'h5' },
+    medium: { icon: 24, text: 'h6' },
+    large: { icon: 28, text: 'h5' },
   };
 
   return (
