@@ -72,6 +72,7 @@ export const ActionButtons = () => {
             letterSpacing: '0.3px',
             background: 'linear-gradient(45deg, #4CAF50 30%, #8BC34A 90%)',
             boxShadow: '0 2px 8px rgba(76, 175, 80, 0.3)',
+            
             '&:hover': {
               background: 'linear-gradient(45deg, #43A047 30%, #7CB342 90%)',
               boxShadow: '0 4px 12px rgba(76, 175, 80, 0.5)',

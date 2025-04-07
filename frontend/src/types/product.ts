@@ -9,7 +9,26 @@ export interface Product {
   image?: string;
   barcode?: string;
   tags?: string[];
+  // Additional fields for Polish store products
+  store?: Store;
+  lastPriceUpdate?: Date;
+  priceHistory?: PriceEntry[];
+  brand?: string;
+  weight?: number;
+  weightUnit?: WeightUnit;
+  promotionalPrice?: number;
+  promotionValidUntil?: Date;
 }
+
+export type Store = 
+  | 'Biedronka'
+  | 'Lewiatan'
+  | 'Delikatesy Centrum'
+  | 'Lidl'
+  | 'Kaufland'
+  | 'Auchan'
+  | 'Carrefour'
+  | 'Other';
 
 export type ProductCategory = 
   | 'Groceries'
@@ -30,6 +49,19 @@ export type Unit =
   | 'l'
   | 'ml'
   | 'pack';
+
+export type WeightUnit =
+  | 'g'
+  | 'kg'
+  | 'ml'
+  | 'l';
+
+export interface PriceEntry {
+  price: number;
+  store: Store;
+  date: Date;
+  isPromotional: boolean;
+}
 
 export interface ProductFormData extends Omit<Product, 'id'> {
   id?: string;

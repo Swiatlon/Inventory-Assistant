@@ -29,7 +29,7 @@ export const WelcomeSection = () => {
           component="h1" 
           gutterBottom
           sx={{ 
-            fontWeight: 800,
+            fontWeight: 700,
             background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',

@@ -27,7 +27,7 @@ export default function Home() {
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
-          gap: {xs: 4, md: 6, lg: 8},
+          gap: { xs: 4, md: 6, lg: 8 },
           pt: { xs: 4, md: 6 },
           pb: { xs: 3, md: 4 }
         }}

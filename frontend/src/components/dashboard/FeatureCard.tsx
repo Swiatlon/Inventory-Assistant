@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Paper, Typography, Box, SxProps, Theme } from '@mui/material';
+import { Paper, Typography, Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 
