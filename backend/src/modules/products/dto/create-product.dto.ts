@@ -1,8 +1,7 @@
-import { IsEnum, IsNotEmpty, IsOptional, IsString, IsNumber } from 'class-validator';
-import { ProductCategory, ProductStore } from '../../../common/constants/enums';
+import { IsString, IsOptional, IsNumber } from 'class-validator';
 
 export class CreateProductDto {
-  @IsNotEmpty()
+  @IsString()
   name: string;
 
   @IsOptional()
@@ -12,27 +11,33 @@ export class CreateProductDto {
   @IsNumber()
   price: number;
 
-  @IsEnum(ProductCategory)
-  category: ProductCategory;
+  @IsString()
+  category: string;
 
-  @IsEnum(ProductStore)
-  store: ProductStore;
+  @IsString()
+  store: string;
 
   @IsOptional()
+  @IsString()
   barcode?: string;
 
   @IsOptional()
+  @IsString()
   brand?: string;
 
   @IsOptional()
+  @IsNumber()
   weight?: number;
 
   @IsOptional()
+  @IsString()
   weightUnit?: string;
 
   @IsOptional()
+  @IsString()
   unit?: string;
 
   @IsOptional()
+  @IsString()
   image?: string;
 }
