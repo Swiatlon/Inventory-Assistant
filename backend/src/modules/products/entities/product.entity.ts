@@ -1,6 +1,6 @@
 import { ProductCategory, ProductStore } from '../../../common/constants/enums';
 
-export interface Product {
+export class ProductEntity {
   id: string;
   name: string;
   description?: string;
